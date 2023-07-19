@@ -35,4 +35,45 @@ func main() {
 	fmt.Println(e)
 	fmt.Println(f)
 	fmt.Println(g)
+
+	// cosntant variable
+	const (
+		A int = 1    // Typed
+		B     = 3.14 // Untyped
+		C     = "Hi!"
+	)
+
+	fmt.Println(A)
+	fmt.Println(B)
+	fmt.Println(C)
+
+	// Print Function
+	var i, j string = "Hello", "World"
+
+	fmt.Print(i, "\n", j, "\n\n")
+
+	// Println Function
+	var s, t string = "Hello", "World"
+
+	fmt.Println(s, t)
+
+	// Printf Function
+	var k string = "Hello"
+	var l int = 15
+
+	fmt.Printf("i has value: %v and type: %T\n", k, k)
+	fmt.Printf("j has value: %v and type: %T", l, l)
+
+	// Formatting Varaibles (Generals)
+	var h = 15.5
+	var txt = "Hello World!"
+
+	fmt.Printf("%v\n", h)
+	fmt.Printf("%#v\n", h)
+	fmt.Printf("%v%%\n", h)
+	fmt.Printf("%T\n", h)
+
+	fmt.Printf("%v\n", txt)
+	fmt.Printf("%#v\n", txt)
+	fmt.Printf("%T\n", txt)
 }
